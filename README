@@ -1,1 +1,77 @@
-Welcome
+# Assignment 1 - Test-Driven Development
+
+## Welcome to Bank of Canada Project.
+
+This Bank of Canada Project accepts user input and performs various bank activities along with login, deposit, withdraw, check balance and customer service
+which is further divided into more methods. 
+
+### Commands required for compiling and running class and test classes.
+
+In A1 folder:
+* For compiling
+       javac *.java
+
+* For Running Code
+       java Main
+
+* For Running Test classes
+       java Main test
+
+
+## Credentials
+
+After running the main class login successfully using this credentials
+
+**username** - **utsav**
+
+**password** - **u12198**
+
+-------------------------------------------------------------------------------
+
+## The functionality provided in this banking( Bank of Canada) project are
+
+1->Open New Account
+2->Check Balance 
+3->Deposit Money 
+4->Withdraw money
+5->Customer Service
+
+The customer service is further divided into
+
+5->Customer Service -> Update Username
+					-> Update Password
+					-> Retrieve Username
+					-> Retrieve Password
+					-> Retrieve Bank Information
+					
+					
+## Class Description
+
+Description of each class that I have used:
+
+**Main.java** - This is used to get the input from the user based on what he desires.
+
+**MainHelper.java** -This class also performs the same thing as Main but just to avoid large number of lines    I divided some of the code of main to this class.  As this class also takes user input and calls the respective methods in other class which are already being tested by their respective test classes.
+				 
+**BocOperations.java** - Methods for the banking operations are defined in this class.
+
+**BocOperationsTest.java** - Corresponding test class to check the functionality of BankOperations.java
+
+**CustomerService.java** - Methods for the Customer Service operations are defined in this class.
+
+**CustomerServiceTest.java** - Corresponding test class to check the functionality of CustomerService.java
+
+**BocOperationsHelper.java** - Class for mathematical operations that will be done during deposit and withdraw from savings and chequing account.
+
+**BocOperationsHelperTest.java** - Corresponding test class to check the functionality of BocOperationsHelper.java
+
+**IBankOfCanada.java** - interface required for mocking the database using dependency injection.
+
+**BankOfCanadaMock.java** - implements the interface and defines the method for login validation.
+
+**BankOfCanadaMockTest.java** - Corresponding test class to check the functionality of BankOfCanadaMock.java
+
+**User.java** - consist of user information and login validation function that depicts the dependency injection feature.
+
+**UserTest.java** - Test class created for testing user success and failure login validation.
+
